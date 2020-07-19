@@ -25,12 +25,12 @@ Lets suppose the project folder is *laravel* and the *laravel* folder is inside 
  > MYSQL_DATABASE: laravel\
  > MYSQL_USER: laravel\
  > MYSQL_PASSWORD: password\
- > MYSQL_ROOT_PASSWORD: password\
+ > MYSQL_ROOT_PASSWORD: password
 
 4. Now copy the *env-example* to *.env* using below command
- > divya@ubuntu:~/project/laravel$ cp .env.example .env\
+ > divya@ubuntu:~/project/laravel$ cp .env.example .env
 
-5. Now edit the newly created *.env* file value  \
+5. Now edit the newly created *.env* file value
 > DB_CONNECTION=mysql\
 > DB_HOST=db\
 > DB_PORT=3306\
@@ -38,16 +38,16 @@ Lets suppose the project folder is *laravel* and the *laravel* folder is inside 
 > DB_USERNAME=laravel\
 > DB_PASSWORD=password\
 
-6. Now run the below command to create a docker image\
- > divya@ubuntu:~/project/laravel$ docker-compose up -d\
+6. Now run the below command to create a docker image
+ > divya@ubuntu:~/project/laravel$ docker-compose up -d
 
 7. As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added
 
 8. Some of the usefull commands
- > divya@ubuntu:~/project/laravel$ docker ps => to check the currently running docker\
- > divya@ubuntu:~/project/laravel$ docker-compose up -d => to create docker container\
- > divya@ubuntu:~/project/laravel$ docker-compose exec app php artisan key:generate => to generate the artisan php key\
- > divya@ubuntu:~/project/laravel$ docker-compose exec app php artisan config:cache => to clear the configuration
+ > divya@ubuntu:\~/project/laravel$ docker ps => to check the currently running docker\
+ > divya@ubuntu:\~/project/laravel$ docker-compose up -d => to create docker container\
+ > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan key:generate => to generate the artisan php key\
+ > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan config:cache => to clear the configuration
 
 
 For more informatrion please click [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
