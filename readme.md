@@ -48,6 +48,26 @@ Lets suppose the project folder is *laravel* and the *laravel* folder is inside 
  > divya@ubuntu:\~/project/laravel$ docker-compose up -d => to create docker container\
  > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan key:generate => to generate the artisan php key\
  > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan config:cache => to clear the configuration
+ 
+ 9. For docker aliases
+ > divya@ubuntu: gedit ~/.bashrc
+ and then add the below command
+ ```
+# some aliases for docker
+alias docker-run='sudo docker-compose run --rm app'
+
+# for bundle command
+alias docker-bundle='sudo docker-compose run --rm app bundle'
+alias docker-bundle-rubocop='sudo docker-compose run --rm app rubocop'
+alias docker-bundle-rspec='sudo docker-compose run --rm app rspec'
+alias docker-yarn-install='sudo docker-compose run --rm app bundle'
+
+# for db command
+alias docker-db-drop='sudo docker-compose run --rm app bundle exec rails db:drop'
+alias docker-db-create='sudo docker-compose run --rm app bundle exec rails db:create'
+alias docker-db-migrate='sudo docker-compose run --rm app bundle exec rails db:migrate'
+alias docker-db-seed='sudo docker-compose run --rm app bundle exec rails db:seed'
+ ```
 
 
 For more informatrion please click [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
