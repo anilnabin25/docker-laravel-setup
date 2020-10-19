@@ -41,7 +41,7 @@ Lets suppose the project folder is *laravel* and the *laravel* folder is inside 
 6. Now run the below command to create a docker image
  > divya@ubuntu:~/project/laravel$ docker-compose up -d
 
-7. As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added
+7. As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added.For my localhost `http://localhost:8000` and for the phpmyadmin `http://localhost:8001`change the port no and username, password and try it 
 
 8. Some of the usefull commands
  > divya@ubuntu:\~/project/laravel$ docker ps => to check the currently running docker\
